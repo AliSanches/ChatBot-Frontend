@@ -1,13 +1,6 @@
-import { Flex, Text, Button, HStack } from "@chakra-ui/react";
-import { IoNotifications } from "react-icons/io5";
-import { Avatar } from "../../components/ui/avatar";
-import {
-  MenuContent,
-  MenuItem,
-  MenuRoot,
-  MenuTrigger,
-} from "../../components/ui/menu";
+import { Flex, Text, HStack } from "@chakra-ui/react";
 import { Navegacao } from "../navegacao/navegacao";
+import { AvatarProfile } from "./avatar";
 
 export const Index = () => {
   return (
@@ -25,38 +18,7 @@ export const Index = () => {
             </Text>
           </div>
           <Flex pl={"auto"}>
-            <MenuRoot positioning={{ placement: "left-start" }}>
-              <MenuTrigger asChild>
-                <Button
-                  background={"transparent"}
-                  color={"white"}
-                  outline={"transparent"}
-                >
-                  <IoNotifications />
-                </Button>
-              </MenuTrigger>
-              <MenuContent>
-                <MenuItem value="new-txt">
-                  Nenhuma notificação no momento...
-                </MenuItem>
-              </MenuContent>
-            </MenuRoot>
-
-            <MenuRoot>
-              <MenuTrigger asChild>
-                <Button background={"transparent"} outline={"transparent"}>
-                  <Avatar
-                    name="Sasuke Uchiha"
-                    src="https://bit.ly/broken-link"
-                    colorPalette="teal"
-                  />
-                </Button>
-              </MenuTrigger>
-              <MenuContent>
-                <MenuItem value="online">Online</MenuItem>
-                <MenuItem value="offline">Offline</MenuItem>
-              </MenuContent>
-            </MenuRoot>
+            <AvatarProfile />
           </Flex>
         </HStack>
       </header>
