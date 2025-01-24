@@ -20,6 +20,9 @@ export const Navegacao = () => {
             alignItems={"center"}
             background={"#ffffff"}
             py={8}
+            zIndex={5}
+            shadow={"sm"}
+            display={{ base: "none", md: "flex" }}
           >
             <NavLink
               to="/index/atendimento"
@@ -74,7 +77,7 @@ export const Navegacao = () => {
               </Tooltip>
             </NavLink>
           </Flex>
-          <main>
+          <main style={{ width: "100vw" }}>
             <Outlet />
           </main>
         </Flex>
