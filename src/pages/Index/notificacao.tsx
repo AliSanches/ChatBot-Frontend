@@ -10,7 +10,7 @@ import { Circle, Float } from "@chakra-ui/react";
 export const Notificacao = () => {
   return (
     <>
-      <MenuRoot positioning={{ placement: "left-start" }}>
+      <MenuRoot positioning={{ placement: "bottom-start" }}>
         <MenuTrigger asChild>
           <button
             style={{

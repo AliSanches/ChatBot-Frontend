@@ -9,10 +9,13 @@ import { Button } from "@chakra-ui/react";
 import { Notificacao } from "./notificacao";
 import online from "/public/online.png";
 import offline from "/public/offline.png";
+import { ChatInterno } from "./chatInterno";
 
 export const AvatarProfile = () => {
   return (
     <>
+      <ChatInterno />
+
       <Notificacao />
 
       <MenuRoot>
