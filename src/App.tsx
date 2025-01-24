@@ -6,12 +6,15 @@ import { Atendimento } from "./pages/atendimento/atendimento";
 import { Agenda } from "./pages/agenda/agenda";
 import { Tags } from "./pages/tags/tags";
 import { Atalho } from "./pages/atalho/atalho";
+import { Login } from "./pages/login/login";
 
 function App() {
   return (
     <Provider>
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Login />} />
+
           <Route path="/index" element={<Index />}>
             <Route path="/index/atendimento" element={<Atendimento />} />
             <Route path="/index/agenda" element={<Agenda />} />
