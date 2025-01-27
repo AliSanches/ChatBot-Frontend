@@ -7,3 +7,44 @@
     rgba(33, 147, 246, 1) 100%
   );
 }
+
+.title {
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.bgLogin {
+  background: url("/Login.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+}
+
+.logo {
+  width: 160px;
+  height: 160px;
+}
+
+.btnLogin {
+  display: "flex";
+  width: "auto";
+  color: "#ffffff";
+  cursor: "pointer";
+  text-decoration: underline;
+  padding: 12px 0;
+  font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+  .btnLogin {
+    display: none;
+  }
+
+  .lateral {
+    background: url("/Lateral.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

@@ -5,7 +5,7 @@ import { AddContato } from "./addContato";
 import { BreadcrumbLink, BreadcrumbRoot } from "../../components/ui/breadcrumb";
 import { LiaSlashSolid } from "react-icons/lia";
 
-import imgChatBot from "/public/chatbot.png";
+import imgChatBot from "/public/chatbot.webp";
 
 export const Atendimento = () => {
   return (
