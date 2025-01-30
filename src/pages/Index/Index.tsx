@@ -9,7 +9,7 @@ export const Index = () => {
       <header>
         <HStack
           h={"60px"}
-          bg={"#738ed3"}
+          bg={"#004db5"}
           alignItems={"center"}
           justifyContent={"space-between"}
         >
@@ -19,7 +19,7 @@ export const Index = () => {
 
           <div>
             <Text px={4} fontWeight={"bold"} fontSize={"22px"}>
-              ChatBot
+              DvBot
             </Text>
           </div>
 
