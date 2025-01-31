@@ -5,6 +5,7 @@ import { PiHeadsetFill } from "react-icons/pi";
 import { TfiAgenda } from "react-icons/tfi";
 import { FaTags } from "react-icons/fa6";
 import { MdMessage } from "react-icons/md";
+import { GiProgression } from "react-icons/gi";
 import style from "./navegacao.module.css";
 
 export const Navegacao = () => {
@@ -24,6 +25,20 @@ export const Navegacao = () => {
             shadow={"sm"}
             display={{ base: "none", md: "flex" }}
           >
+            <NavLink
+              to="/index/dashboard"
+              className={({ isActive }) =>
+                isActive ? `${style.nav} ${style.active}` : style.nav
+              }
+            >
+              <Tooltip
+                content="Dashboard"
+                positioning={{ placement: "right-end" }}
+              >
+                <GiProgression />
+              </Tooltip>
+            </NavLink>
+
             <NavLink
               to="/index/atendimento"
               className={({ isActive }) =>
@@ -77,7 +92,7 @@ export const Navegacao = () => {
               </Tooltip>
             </NavLink>
           </Flex>
-          <main style={{ width: "100vw" }}>
+          <main style={{ width: "100vw", background: "#ffffff" }}>
             <Outlet />
           </main>
         </Flex>
